@@ -49,6 +49,18 @@ public class Menu extends Activity {
 
         }
 
+        tvProfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent registerIntent = new Intent(Menu.this, kesher.class);
+                Menu.this.startActivity(registerIntent);
+            }
+        });
+        {
+
+        }
+
+
         TextView tvLogout1 = (TextView) findViewById(R.id.tvLogout);
         tvLogout1.setOnClickListener(new View.OnClickListener() {
 

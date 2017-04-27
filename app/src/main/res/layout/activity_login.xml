@@ -94,7 +94,7 @@
         android:layout_height="wrap_content"
         android:textColor="#ff5500"
         android:textStyle="bold"
-        android:text="סטוטס התחברות"
+        android:text="סטטוס התחברות"
 
         tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toTopOf="@+id/etEmail"
