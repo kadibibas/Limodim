@@ -7,4 +7,19 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+
+    <string-array name="ProItem">
+        <item>אנגלית</item>
+        <item>אזרחות</item>
+        <item>ביולוגיה</item>
+        <item>גיאוגרפיה</item>
+        <item>היסטוריה</item>
+        <item>חשבון/מתמטיקה</item>
+        <item>כימיה</item>
+        <item>לשון</item>
+        <item>מדעים</item>
+        <item>ספרות</item>
+        <item>ערבית</item>
+        <item>תנ"ך</item>
+    </string-array>
 </resources>
