@@ -3,9 +3,8 @@ package com.example.kadibibas.limodim;
 import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
@@ -139,10 +138,10 @@ public class Register extends Activity {
 
                     }
                 };
-                /*
+
                 RegisterRequest registerRequest = new RegisterRequest(email, password, Name, city, phone_num, responseListener);
                 RequestQueue queue = Volley.newRequestQueue(Register.this);
-                queue.add(registerRequest);*/
+                queue.add(registerRequest);
             }
         });
 
