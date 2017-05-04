@@ -59,6 +59,16 @@ public class Menu extends Activity {
         {
 
         }
+        textView8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent registerIntent = new Intent(Menu.this, about.class);
+                Menu.this.startActivity(registerIntent);
+            }
+        });
+        {
+
+        }
 
 
         TextView tvLogout1 = (TextView) findViewById(R.id.tvLogout);

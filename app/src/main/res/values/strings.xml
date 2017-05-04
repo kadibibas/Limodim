@@ -22,4 +22,5 @@
         <item>ערבית</item>
         <item>תנ"ך</item>
     </string-array>
+    <string name="title_activity_about">about</string>
 </resources>
