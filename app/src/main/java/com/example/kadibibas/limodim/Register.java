@@ -100,7 +100,6 @@ public class Register extends Activity {
         final EditText etPassword = (EditText) findViewById(R.id.etpassword);
         final EditText etEmail = (EditText) findViewById(R.id.etEmail);
         final EditText etPhone = (EditText) findViewById(R.id.etPhone);
-        final EditText etProfession = (EditText) findViewById(R.id.etProfession);
         final EditText etcity = (EditText) findViewById(R.id.etcity);
         final Button bRegister = (Button) findViewById(R.id.bRegister);
 
@@ -111,7 +110,7 @@ public class Register extends Activity {
                 final String password = etPassword.getText().toString();
                 final String Name = etName.getText().toString();
                 final String city = etcity.getText().toString();
-                final String phone_num = etEmail.getText().toString();
+                final String phone_num = etPhone.getText().toString();
 
                 final Response.Listener<String> responseListener = new Response.Listener<String>()
                 {
@@ -142,9 +141,9 @@ public class Register extends Activity {
                 RegisterRequest registerRequest = new RegisterRequest(email, password, Name, city, phone_num, responseListener);
                 RequestQueue queue = Volley.newRequestQueue(Register.this);
                 queue.add(registerRequest);
+
             }
         });
-
 
     }
 }
