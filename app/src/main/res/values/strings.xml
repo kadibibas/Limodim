@@ -5,6 +5,11 @@
     <string name="open">Open</string>
     <string name="close">Close</string>
 
+
+    <string name="banner_ad_unit_id">ca-app-pub-4029997492356438/7341493500</string>
+    <string name="admob_interstitial_id">ca-app-pub-4029997492356438/2632092309</string>
+
+
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
