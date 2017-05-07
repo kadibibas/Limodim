@@ -29,19 +29,63 @@
 
     <TextView
         android:id="@+id/textView18"
-        android:layout_width="217dp"
-        android:layout_height="41dp"
+        android:layout_width="111dp"
+        android:layout_height="42dp"
         android:text="אודות"
         android:textColor="@color/orange"
         android:textSize="30sp"
         android:textStyle="bold"
+        android:layout_marginStart="104dp"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/textView19"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="19dp"
+        app:layout_constraintLeft_toLeftOf="@+id/textView19"
+        android:layout_marginLeft="104dp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="0dp"
+        android:layout_height="208dp"
+        android:text="לימודים הינה מיזם חברתי עסקי שהוקם במטרה לחבר בין תלמידים שזקוקים לעזרה בלימודים לסטודנטים המעוניינים להעביר שיעורים פרטייים תמורת תשלום"
+        android:textAlignment="center"
+        android:textColor="@color/orange"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginStart="32dp"
         tools:layout_constraintTop_creator="1"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="175dp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintRight_toRightOf="parent"
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="44dp" />
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="0dp"
+        android:layout_height="119dp"
+        android:text="האפליקציה הוקמה בשנת 2017 על ידי קדי רם ביבס וישי לוי"
+        android:textAlignment="center"
+        android:textColor="@color/orange"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginStart="30dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView19"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp" />
+
 
 
 </android.support.constraint.ConstraintLayout>

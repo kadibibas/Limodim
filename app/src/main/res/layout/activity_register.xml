@@ -74,7 +74,7 @@
         android:layout_marginBottom="10dp"
         android:layout_marginLeft="10dp"
         app:layout_constraintBottom_toTopOf="@+id/etPassword"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/etPhone"
@@ -107,12 +107,15 @@
         android:textColorHint="#ff5500"
         android:textStyle="bold"
         android:inputType="textPostalAddress"
+        tools:layout_constraintBottom_creator="1"
         android:layout_marginStart="6dp"
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="6dp"
         tools:layout_constraintTop_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/etProfession"
         android:layout_marginTop="52dp"
+        android:layout_marginBottom="48dp"
         app:layout_constraintTop_toTopOf="@+id/etPhone"
         app:layout_constraintVertical_bias="0.0" />
 
@@ -131,12 +134,12 @@
         android:layout_marginEnd="19dp"
         app:layout_constraintRight_toRightOf="parent"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="68dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="19dp"
         android:layout_marginRight="19dp"
         android:background="@drawable/bttt"
-        app:layout_constraintHorizontal_bias="1.0" />
+        app:layout_constraintHorizontal_bias="0.0" />
 
     <android.support.constraint.Guideline
         android:layout_width="wrap_content"
@@ -150,17 +153,18 @@
     <Button
         android:id="@+id/choosePro"
         android:layout_width="163dp"
-        android:layout_height="48dp"
-        android:layout_marginEnd="8dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="0dp"
         android:background="@drawable/butten"
         android:text="בחירת מקצועות"
         android:textSize="18sp"
         android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="@+id/etProfession"
+        app:layout_constraintTop_toBottomOf="@+id/etProfession"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1"
-        android:layout_marginTop="11dp"
-        app:layout_constraintTop_toBottomOf="@+id/etcity"
-        tools:layout_editor_absoluteX="213dp" />
+        tools:layout_constraintTop_creator="1" />
 
     <TextView
         android:id="@+id/tvItemSelected"
@@ -177,6 +181,7 @@
         app:layout_constraintRight_toRightOf="@+id/choosePro"
         app:layout_constraintTop_toBottomOf="@+id/choosePro"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1" />
+        tools:layout_constraintTop_creator="1"
+        tools:layout_editor_absoluteX="37dp" />
 
 </android.support.constraint.ConstraintLayout>
