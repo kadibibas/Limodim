@@ -18,7 +18,7 @@ public class Open extends Activity {
         new Handler().postDelayed(new Runnable(){
             @Override
             public void run(){
-                Intent homeIntent = new Intent(Open.this, Menu.class);
+                Intent homeIntent = new Intent(Open.this, MainActivity.class);
                 startActivity(homeIntent);
                 finish();
             }
