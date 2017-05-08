@@ -4,8 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back2"
+    android:background="@drawable/logo4"
     tools:context="com.example.kadibibas.limodim.User">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="420dp"
+        android:layout_height="56dp"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/logo2"/>
+
+
+    </android.support.v7.widget.Toolbar>
 
     <TextView
         android:id="@+id/tvname"
@@ -35,9 +55,9 @@
         app:layout_constraintBottom_toBottomOf="@+id/tvProfession"
         android:layout_marginEnd="10dp"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="42dp"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="29dp"
+        android:layout_marginBottom="43dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tvname"
         android:layout_marginLeft="10dp"
@@ -105,9 +125,9 @@
         app:layout_constraintBottom_toBottomOf="@+id/etphone"
         android:layout_marginEnd="11dp"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="82dp"
+        android:layout_marginTop="96dp"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="83dp"
+        android:layout_marginBottom="97dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="@+id/etProfession"
         android:layout_marginLeft="11dp"
@@ -126,7 +146,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="15dp"
         app:layout_constraintTop_toBottomOf="@+id/tvphone"
         tools:layout_constraintLeft_creator="1"
         android:layout_marginBottom="8dp"
@@ -164,5 +184,21 @@
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="68dp"
         android:layout_marginRight="68dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ברוך הבא"
+        android:textStyle="bold"
+        android:textColor="#ff5500"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="3dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="601dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:layout_marginRight="78dp" />
 
 </android.support.constraint.ConstraintLayout>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back1"
+    android:background="@drawable/logo4"
     tools:context="com.example.kadibibas.limodim.Login"
     tools:layout_editor_absoluteY="81dp"
     tools:layout_editor_absoluteX="0dp">
