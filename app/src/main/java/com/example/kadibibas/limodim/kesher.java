@@ -1,6 +1,7 @@
 package com.example.kadibibas.limodim;
 
 import android.Manifest;
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
@@ -13,9 +14,9 @@ import android.view.View;
 import android.widget.Button;
 
 
-public class kesher extends AppCompatActivity {
+public class kesher extends AppCompatActivity
+{
 
-    private static final int MY_PERMISSIONS_REQUEST_CALL_PHONE = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +26,7 @@ public class kesher extends AppCompatActivity {
         final Button button2 = (Button) findViewById(R.id.button2);
         final Button kadi = (Button) findViewById(R.id.kadi);
 
+        final Button facebook = (Button) findViewById(R.id.imageButton3);
 
         final Button Phone = (Button) findViewById(R.id.imageButton2);
         Phone.setOnClickListener(new View.OnClickListener() {
@@ -46,6 +48,25 @@ public class kesher extends AppCompatActivity {
 
             }
             });
+
+
+        facebook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent facebookAppIntent;
+                try
+                {
+                    facebookAppIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("fb://page/1551085365"));
+                    startActivity(facebookAppIntent);
+                }
+                catch (ActivityNotFoundException e)
+                {
+                    facebookAppIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/kadi.bibas"));
+                    startActivity(facebookAppIntent);
+                }
+            }
+        });
+
 
 
 
