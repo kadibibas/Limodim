@@ -9,6 +9,18 @@
     tools:layout_editor_absoluteY="25dp"
     tools:layout_editor_absoluteX="0dp">
 
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-------------------------------------------------------------------------------------"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/googl"
+        android:layout_marginRight="26dp" />
+
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="0dp"
@@ -34,8 +46,8 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="18dp"
-        android:layout_height="18dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
         android:background="@drawable/arrofi"
         android:layout_marginStart="4dp"
         tools:layout_constraintTop_creator="1"
@@ -47,57 +59,145 @@
 
     <Button
         android:id="@+id/kadi"
-        android:layout_width="88dp"
-        android:layout_height="48dp"
-        android:background="@drawable/mailred"
+        android:layout_width="50dp"
+        android:layout_height="42dp"
+        android:background="@drawable/em1"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton2"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintRight_toRightOf="@+id/imageButton2"
-        android:layout_marginBottom="36dp"
         app:layout_constraintLeft_toLeftOf="@+id/imageButton2" />
 
     <Button
         android:id="@+id/imageButton2"
-        android:layout_width="88dp"
-        android:layout_height="48dp"
-        android:background="@drawable/tlf"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton3"
-        app:layout_constraintRight_toRightOf="@+id/imageButton3"
+        android:layout_width="50dp"
+        android:layout_height="42dp"
+        android:background="@drawable/tl1"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="28dp"
-        app:layout_constraintLeft_toLeftOf="@+id/imageButton3" />
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintTop_toBottomOf="@+id/kadi"
+        app:layout_constraintLeft_toLeftOf="@+id/textView6" />
 
     <Button
         android:id="@+id/imageButton3"
-        android:layout_width="88dp"
-        android:layout_height="48dp"
-        android:background="@drawable/faceliu"
+        android:layout_width="50dp"
+        android:layout_height="42dp"
+        android:background="@drawable/fc1"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/googl"
-        app:layout_constraintRight_toRightOf="@+id/googl"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="31dp"
-        app:layout_constraintLeft_toLeftOf="@+id/googl" />
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/imageButton2"
+        android:layout_marginTop="26dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:layout_constraintLeft_toLeftOf="@+id/imageButton2" />
 
     <Button
         android:id="@+id/googl"
-        android:layout_width="88dp"
-        android:layout_height="48dp"
-        android:background="@drawable/glogo"
+        android:layout_width="50dp"
+        android:layout_height="42dp"
+        android:background="@drawable/gp1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/imageButton3"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3"
+        app:layout_constraintLeft_toLeftOf="@+id/imageButton3" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-------------------------------------------------------------------------------------"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="2dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3"
+        android:layout_marginRight="26dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-------------------------------------------------------------------------------------"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton3"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="144dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        android:layout_marginBottom="9dp"
+        android:layout_marginRight="26dp" />
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-------------------------------------------------------------------------------------"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="123dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="26dp" />
 
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Limudum@gmail.com"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        android:layout_marginEnd="27dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="23dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="התקשרו אלינו"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="27dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="עמוד הפייסבוק שלנו"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="27dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="21dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="עמוד הגוגל פלוס שלנו"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        android:layout_marginEnd="27dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="20dp" />
 
 
 </android.support.constraint.ConstraintLayout>
