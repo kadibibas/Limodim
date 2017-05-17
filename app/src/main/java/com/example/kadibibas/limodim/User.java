@@ -1,9 +1,12 @@
 package com.example.kadibibas.limodim;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -27,6 +30,26 @@ public class User extends Activity {
 
         ImageView stars=(ImageView) findViewById(R.id.imageView8);
         stars.setImageResource(R.drawable.rating2);
+
+        final Button opinion = (Button) findViewById(R.id.button5);
+        opinion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent opinionIntent = new Intent(User.this, opinion.class);
+                User.this.startActivity(opinionIntent);
+            }
+        });
+
+        final Button refer = (Button) findViewById(R.id.button3);
+        refer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent referIntent = new Intent(User.this, Refer.class);
+                User.this.startActivity(referIntent);
+            }
+        });
+
+
 /*
         final EditText etname = (EditText) findViewById(R.id.etname);
         final EditText etphone = (EditText) findViewById(R.id.etphone);

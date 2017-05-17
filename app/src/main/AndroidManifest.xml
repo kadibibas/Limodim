@@ -10,8 +10,8 @@
         android:allowBackup="true"
         android:icon="@drawable/logo2"
         android:label=""
-        android:supportsRtl="true"
         android:logo="@drawable/logo2"
+        android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Login" />
         <activity android:name=".Register" />
@@ -19,7 +19,7 @@
         <activity
             android:name=".MainActivity"
             android:label=""
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Open">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,7 +34,9 @@
             android:value="@string/facebook_app_id" />
 
         <activity android:name=".kesher" />
-        <activity android:name=".about"></activity>
+        <activity android:name=".about" />
+        <activity android:name=".opinion" />
+        <activity android:name=".Refer"></activity>
     </application>
 
 </manifest>
