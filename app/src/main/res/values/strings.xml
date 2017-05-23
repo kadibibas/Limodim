@@ -29,5 +29,21 @@
         <item>ערבית</item>
         <item>תנ"ך</item>
     </string-array>
+
+
+    <string-array name="CItem">
+        <item>א</item>
+        <item>ב</item>
+        <item>ג</item>
+        <item>ד</item>
+        <item>ה</item>
+        <item>ו</item>
+        <item>ז</item>
+        <item>ח</item>
+        <item>ט</item>
+        <item>י</item>
+        <item>יא</item>
+        <item>יב</item>
+    </string-array>
     <string name="title_activity_about">about</string>
 </resources>

@@ -2,6 +2,7 @@ package com.example.kadibibas.limodim;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -17,11 +18,13 @@ import com.facebook.FacebookSdk;
 import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
+import com.facebook.login.widget.ProfilePictureView;
 
 public class Login extends Activity {
     TextView tvStatus;
     LoginButton login_button;
     CallbackManager callbackManager;
+    private ProfilePictureView mProfilePic;
 
 
     @Override
@@ -32,6 +35,7 @@ public class Login extends Activity {
         setContentView(R.layout.activity_login);
         initiallzeControls();
         loginWithFB();
+
 
 
 
