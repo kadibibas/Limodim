@@ -15,9 +15,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.google.android.gms.actions.SearchIntents;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -49,8 +51,6 @@ public class MainActivity extends AppCompatActivity
 
         Timer timer = new Timer();
         timer.scheduleAtFixedRate(new MyTimerTask(), 2000, 4000);
-
-
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -156,6 +156,10 @@ public class MainActivity extends AppCompatActivity
             Intent registerIntent = new Intent(MainActivity.this, User.class);
             MainActivity.this.startActivity(registerIntent);
 
+        } else if (id == R.id.nav_search) {
+            Intent registerIntent = new Intent(MainActivity.this, Search.class);
+            MainActivity.this.startActivity(registerIntent);
+
         } else if (id == R.id.nav_about) {
             Intent registerIntent = new Intent(MainActivity.this, about.class);
             MainActivity.this.startActivity(registerIntent);
@@ -165,6 +169,8 @@ public class MainActivity extends AppCompatActivity
             MainActivity.this.startActivity(registerIntent);
 
         } else if (id == R.id.nav_share) {
+            Intent registerIntent = new Intent(MainActivity.this, Search.class);
+            MainActivity.this.startActivity(registerIntent);
 
         } else if (id == R.id.nav_logout) {
             finish();

@@ -45,5 +45,41 @@
         <item>יא</item>
         <item>יב</item>
     </string-array>
+
+    <string-array name="cityItem">
+        <item>תל אביב</item>
+        <item>אזור גוש דן</item>
+        <item>ירושלים</item>
+        <item>באר שבע</item>
+        <item>אילת</item>
+        <item>קריית שמונה</item>
+        <item>חיפה</item>
+        <item>קריות</item>
+        <item>עכו-נהריה</item>
+        <item>עפולה והעמקים</item>
+        <item>נתניה</item>
+        <item>רמת הגולן</item>
+        <item>השרון</item>
+        <item>עמק הירדן</item>
+        <item>בקעה</item>
+        <item>גוש עציון</item>
+        <item>ירוחם-דימונה</item>
+
+    </string-array>
+
     <string name="title_activity_about">about</string>
+    <string name="title_activity_refer2">refer to student</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
 </resources>

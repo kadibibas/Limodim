@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo4"
+    tools:context="com.example.kadibibas.limodim.Search"
+    tools:layout_editor_absoluteY="25dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/stitle"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/logo2"/>
+    </android.support.v7.widget.Toolbar>
+
+
+    <Button
+        android:id="@+id/sPro"
+        android:layout_width="187dp"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="בחירת מקצוע"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#ffff"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="148dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sClass"
+        android:layout_width="187dp"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="בחירת כיתה"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#ffff"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="65dp"
+        app:layout_constraintTop_toBottomOf="@+id/sPro"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/scity"
+        android:layout_width="187dp"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="בחירת מקום מגורים"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#ffff"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="85dp"
+        app:layout_constraintTop_toBottomOf="@+id/sClass"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/sclassSelected"
+        android:layout_width="156dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="לא נבחרה כיתה"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/scitySelected"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="127dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="130dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sproSelected" />
+
+    <TextView
+        android:id="@+id/scitySelected"
+        android:layout_width="156dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="לא נבחר מקום מגורים"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/scity"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/sproSelected"
+        android:layout_width="169dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="לא נבחר מקצוע"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/sClass"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="45dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sPro" />
+
+    <TextView
+        android:id="@+id/stitle"
+        android:layout_width="0dp"
+        android:layout_height="77dp"
+        android:gravity="center"
+        android:text="אנא מלא את השדות הבאים ואנו נמצא את הסטודנטים המתאימים עבורך"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/sPro"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="56dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="63dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sfind"
+        android:layout_width="187dp"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="התחל חיפוש"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#ffff"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
