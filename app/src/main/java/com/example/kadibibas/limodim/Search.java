@@ -130,9 +130,12 @@ public class Search extends AppCompatActivity {
                         } else if (mUserItems2.contains(position)) {
                             mUserItems2.remove(position);
                         }
+
                     }
                 });
                 mBuilder.setCancelable(false);
+
+
                 mBuilder.setPositiveButton("אשר", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int which) {
