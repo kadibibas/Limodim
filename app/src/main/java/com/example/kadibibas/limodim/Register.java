@@ -21,19 +21,13 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 
 public class Register extends Activity {
-    //pro
+
     Button cPro;
     TextView mItemSelected;
     String[] listItems;
     boolean[] checkedItems;
     ArrayList<Integer> mUserItems= new ArrayList<>();
 
-    //class
-    Button cClass;
-    TextView cItemSelected;
-    String[] listClass;
-    boolean[] checkedItems2;
-    ArrayList<Integer> mUserCItems= new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,19 +35,11 @@ public class Register extends Activity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_register);
 
-        //pro
         cPro = (Button) findViewById(R.id.choosePro);
         mItemSelected = (TextView) findViewById(R.id.tvItemSelected);
         listItems= getResources().getStringArray(R.array.ProItem);
         checkedItems= new boolean[listItems.length];
 
-        //class
-        cClass = (Button) findViewById(R.id.chooseClass);
-        cItemSelected = (TextView) findViewById(R.id.clItemSelected);
-        listClass= getResources().getStringArray(R.array.CItem);
-        checkedItems2= new boolean[listClass.length];
-
-        //pro
         cPro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -108,63 +94,6 @@ public class Register extends Activity {
 
             }
         });
-
-        //class
-        cClass.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                AlertDialog.Builder mBuilder= new AlertDialog.Builder(Register.this);
-                mBuilder.setTitle("סמן את כיתות הלימוד");
-                mBuilder.setMultiChoiceItems(listClass, checkedItems2, new DialogInterface.OnMultiChoiceClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int position, boolean isChecked) {
-                        if (isChecked){
-                            if(! mUserCItems.contains(position)){
-                                mUserCItems.add(position);
-                            }
-                        }else if (mUserCItems.contains(position)){
-                            mUserCItems.remove(position);
-                        }
-                    }
-                });
-                mBuilder.setCancelable(false);
-                mBuilder.setPositiveButton("אשר", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int which) {
-                        String item= "";
-                        for(int i=0;i<mUserCItems.size();i++ ){
-                            item = item + listClass[mUserCItems.get(i)];
-                            if(i != mUserCItems.size() -1){
-                                item = item + ", ";
-                            }
-                        }
-                        cItemSelected.setText(item);
-                    }
-                });
-
-                mBuilder.setNegativeButton("בטל", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        dialogInterface.dismiss();
-                    }
-                });
-
-                mBuilder.setNeutralButton("נקה הכל", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int which) {
-                        for(int i = 0; i<checkedItems2.length; i++){
-                            checkedItems2[i]= false;
-                            mUserCItems.clear();
-                            cItemSelected.setText("לא נבחרו כיתות");
-                        }
-                    }
-                });
-                AlertDialog mDialog = mBuilder.create();
-                mDialog.show();
-
-            }
-        });
-
 
 
         final EditText etName = (EditText) findViewById(R.id.etName);

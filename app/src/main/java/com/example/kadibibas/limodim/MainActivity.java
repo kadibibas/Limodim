@@ -15,12 +15,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import com.google.android.gms.actions.SearchIntents;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -45,16 +42,6 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final Button s = (Button) findViewById(R.id.button7);
-        s.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent sIntent = new Intent(MainActivity.this, Search.class);
-                MainActivity.this.startActivity(sIntent);
-            }
-        });
-
-
         viewPager = (ViewPager) findViewById(R.id.viewpager);
 
         ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(this);
@@ -63,9 +50,10 @@ public class MainActivity extends AppCompatActivity
         Timer timer = new Timer();
         timer.scheduleAtFixedRate(new MyTimerTask(), 2000, 4000);
 
+
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -168,10 +156,6 @@ public class MainActivity extends AppCompatActivity
             Intent registerIntent = new Intent(MainActivity.this, User.class);
             MainActivity.this.startActivity(registerIntent);
 
-        } else if (id == R.id.nav_search) {
-            Intent registerIntent = new Intent(MainActivity.this, Search.class);
-            MainActivity.this.startActivity(registerIntent);
-
         } else if (id == R.id.nav_about) {
             Intent registerIntent = new Intent(MainActivity.this, about.class);
             MainActivity.this.startActivity(registerIntent);
@@ -181,7 +165,6 @@ public class MainActivity extends AppCompatActivity
             MainActivity.this.startActivity(registerIntent);
 
         } else if (id == R.id.nav_share) {
-
 
         } else if (id == R.id.nav_logout) {
             finish();
