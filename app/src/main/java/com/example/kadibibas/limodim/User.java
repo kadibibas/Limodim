@@ -61,7 +61,7 @@ public class User extends Activity {
         setContentView(R.layout.activity_user);
 
         ImageView Profilimage = (ImageView) findViewById(R.id.imageView4);
-        Profilimage.setImageResource(R.drawable.ishai);
+        Profilimage.setImageResource(R.drawable.noam);
 
         ImageView mail = (ImageView) findViewById(R.id.imageView5);
         mail.setImageResource(R.drawable.ic_email_black_24dp);
@@ -90,6 +90,15 @@ public class User extends Activity {
             }
         });
 
+        final Button schedule = (Button) findViewById(R.id.button4);
+        schedule.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent scheduleIntent = new Intent(User.this, Schedule.class);
+                User.this.startActivity(scheduleIntent);
+            }
+        });
+
 
     }
 
@@ -105,7 +114,6 @@ public class User extends Activity {
 */
 
 
-    }
-
+}
 
 

@@ -51,7 +51,7 @@
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ישי לוי"
+        android:text=" נועם גורן"
         android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
@@ -122,7 +122,7 @@
         android:layout_height="0dp"
         android:layout_marginBottom="22dp"
         android:layout_marginTop="21dp"
-        android:text="ישי העביר שיעור אנגילת לבני אשר בכיתה ה. השיעור היה מוצלח מאוד, ישי היה מקצועי ונחמד מאוד לבני. ממליץ בחום"
+        android:text="נועם העביר שיעור אנגילת לבני אשר בכיתה ה. השיעור היה מוצלח מאוד, נועם היה מקצועי ונחמד מאוד לבני. ממליץ בחום"
         android:textAlignment="center"
         android:textColor="@color/darkorange"
         android:textSize="18sp"
@@ -189,7 +189,7 @@
         android:layout_height="80dp"
         android:layout_marginEnd="1dp"
         android:layout_marginStart="1dp"
-        android:text="ישי העביר שיעור חשבון לביתי בת ה-8, השיעור היה מוצלח מאוד"
+        android:text="נועם העביר שיעור חשבון לביתי בת ה-8, השיעור היה מוצלח מאוד"
         android:textAlignment="center"
         android:textColor="@color/darkorange"
         android:textSize="18sp"
@@ -199,7 +199,9 @@
         app:layout_constraintTop_toBottomOf="@+id/textView36"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1" />
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="0dp"
+        app:layout_constraintHorizontal_bias="0.666" />
 
     <ImageButton
         android:id="@+id/imageButton5"

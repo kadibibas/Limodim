@@ -1,6 +1,7 @@
 package com.example.kadibibas.limodim;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -39,6 +40,16 @@ public class Search extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_search);
+
+        final Button s1 = (Button) findViewById(R.id.sfind);
+        s1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent s = new Intent(Search.this, User.class);
+                Search.this.startActivity(s);
+            }
+        });
+
 
         //pro
         sPro = (Button) findViewById(R.id.sPro);
