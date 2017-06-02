@@ -43,7 +43,8 @@
         <activity android:name=".opinion" />
         <activity android:name=".Refer" />
         <activity android:name=".Search" />
-        <activity android:name=".Schedule"></activity>
+        <activity android:name=".Schedule" />
+        <activity android:name=".User2"></activity>
     </application>
 
 </manifest>

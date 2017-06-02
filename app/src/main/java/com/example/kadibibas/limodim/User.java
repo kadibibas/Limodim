@@ -99,6 +99,15 @@ public class User extends Activity {
             }
         });
 
+        final Button next = (Button) findViewById(R.id.button8);
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent nextIntent = new Intent(User.this, User2.class);
+                User.this.startActivity(nextIntent);
+            }
+        });
+
 
     }
 
