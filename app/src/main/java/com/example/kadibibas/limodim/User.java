@@ -61,7 +61,7 @@ public class User extends Activity {
         setContentView(R.layout.activity_user);
 
         ImageView Profilimage = (ImageView) findViewById(R.id.imageView4);
-        Profilimage.setImageResource(R.drawable.noam);
+        Profilimage.setImageResource(R.drawable.noam3);
 
         ImageView mail = (ImageView) findViewById(R.id.imageView5);
         mail.setImageResource(R.drawable.ic_email_black_24dp);
