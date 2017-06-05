@@ -26,6 +26,14 @@
             android:layout_gravity="center"
             android:src="@drawable/logo2"/>
 
+        <ImageButton
+            android:id="@+id/back2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/arrofi"
+            android:background="@color/colorPrimary"
+            />
+
 
     </android.support.v7.widget.Toolbar>
 

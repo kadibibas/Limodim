@@ -15,6 +15,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
@@ -34,6 +36,7 @@ public class MainActivity extends AppCompatActivity
     InterstitialAd mInterstitialAd;
     private InterstitialAd interstitial;
     ViewPager viewPager;
+    ImageButton search,top;
 
 
 
@@ -41,6 +44,26 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        top = (ImageButton)findViewById(R.id.top);
+        search = (ImageButton)findViewById(R.id.search);
+
+        top.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent topIntent = new Intent(MainActivity.this, TopTen.class);
+                MainActivity.this.startActivity(topIntent);
+            }
+        });
+
+        search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent searchIntent = new Intent(MainActivity.this, Search.class);
+                MainActivity.this.startActivity(searchIntent);
+            }
+        });
+
 
         viewPager = (ViewPager) findViewById(R.id.viewpager);
 
@@ -81,6 +104,7 @@ public class MainActivity extends AppCompatActivity
                 displayInterstitial();
             }
         });
+
     }
 
     public class MyTimerTask extends TimerTask
@@ -153,7 +177,7 @@ public class MainActivity extends AppCompatActivity
                     MainActivity.this.startActivity(registerIntent);
 
         } else if (id == R.id.nav_profile) {
-            Intent registerIntent = new Intent(MainActivity.this, User.class);
+            Intent registerIntent = new Intent(MainActivity.this, Main_User.class);
             MainActivity.this.startActivity(registerIntent);
 
         } else if (id == R.id.nav_about) {

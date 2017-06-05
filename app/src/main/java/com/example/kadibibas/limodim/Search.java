@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -41,12 +42,22 @@ public class Search extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_search);
 
+        final ImageButton back6 = (ImageButton)findViewById(R.id.back6);
+
         final Button s1 = (Button) findViewById(R.id.sfind);
         s1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent s = new Intent(Search.this, Result.class);
                 Search.this.startActivity(s);
+            }
+        });
+
+        back6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent registerIntent = new Intent(Search.this, MainActivity.class);
+                Search.this.startActivity(registerIntent);
             }
         });
 

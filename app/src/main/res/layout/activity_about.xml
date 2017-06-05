@@ -24,6 +24,14 @@
             android:layout_gravity="center"
             android:src="@drawable/logo2"/>
 
+        <ImageButton
+            android:id="@+id/back5"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/arrofi"
+            android:background="@color/colorPrimary"
+            />
+
 
     </android.support.v7.widget.Toolbar>
 
@@ -32,7 +40,7 @@
         android:layout_width="111dp"
         android:layout_height="42dp"
         android:text="אודות"
-        android:textColor="@color/orange"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="30sp"
         android:textStyle="bold"
         android:layout_marginStart="104dp"
@@ -49,7 +57,7 @@
         android:layout_height="208dp"
         android:text="לימודים הינה מיזם חברתי עסקי שהוקם במטרה לחבר בין תלמידים שזקוקים לעזרה בלימודים לסטודנטים המעוניינים להעביר שיעורים פרטייים תמורת תשלום"
         android:textAlignment="center"
-        android:textColor="@color/orange"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_marginStart="32dp"
@@ -71,7 +79,7 @@
         android:layout_height="119dp"
         android:text="האפליקציה הוקמה בשנת 2017 על ידי קדי רם ביבס וישי לוי"
         android:textAlignment="center"
-        android:textColor="@color/orange"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_marginStart="30dp"

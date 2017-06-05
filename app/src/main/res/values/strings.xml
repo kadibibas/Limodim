@@ -67,6 +67,21 @@
 
     </string-array>
 
+    <string-array name="titles">
+        <item>"Facebook"</item>
+        <item>"Instagram"</item>
+        <item>"Twitter"</item>
+        <item>"Google"</item>
+    </string-array>
+
+    <string-array name="description">
+        <item>"Facebook Description"</item>
+        <item>"Instagram Description"</item>
+        <item>"Twitter Description"</item>
+        <item>"Google Description"</item>
+    </string-array>
+
+
     <string name="title_activity_about">about</string>
     <string name="title_activity_refer2">refer to student</string>
 

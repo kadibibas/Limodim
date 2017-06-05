@@ -12,6 +12,7 @@ import android.text.Html;
 import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 
 public class kesher extends AppCompatActivity
@@ -23,7 +24,7 @@ public class kesher extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kesher);
 
-        final Button button2 = (Button) findViewById(R.id.button2);
+        final ImageButton back1 = (ImageButton) findViewById(R.id.back1);
         final Button kadi = (Button) findViewById(R.id.kadi);
 
         final Button facebook = (Button) findViewById(R.id.imageButton3);
@@ -75,7 +76,7 @@ public class kesher extends AppCompatActivity
         kadi.setMovementMethod(LinkMovementMethod.getInstance());
 
 
-        button2.setOnClickListener(new View.OnClickListener() {
+        back1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent registerIntent = new Intent(kesher.this, MainActivity.class);

@@ -19,7 +19,7 @@ public class Result extends AppCompatActivity {
         re.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent re = new Intent(Result.this, User.class);
+                Intent re = new Intent(Result.this, Main_User.class);
                 Result.this.startActivity(re);
             }
         });

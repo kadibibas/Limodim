@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -39,7 +40,7 @@ public class Login extends Activity {
 
 
 
-
+        final ImageButton back2 = (ImageButton)findViewById(R.id.back2);
         final EditText etEmail = (EditText) findViewById(R.id.etEmail);
         final EditText etPassword = (EditText) findViewById(R.id.etpassword);
         final TextView tvRegisterHere = (TextView) findViewById(R.id.tvRegisterHere);
@@ -49,6 +50,14 @@ public class Login extends Activity {
             @Override
             public void onClick(View v) {
                 Intent registerIntent = new Intent(Login.this, Register.class);
+                Login.this.startActivity(registerIntent);
+            }
+        });
+
+        back2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent registerIntent = new Intent(Login.this, MainActivity.class);
                 Login.this.startActivity(registerIntent);
             }
         });
