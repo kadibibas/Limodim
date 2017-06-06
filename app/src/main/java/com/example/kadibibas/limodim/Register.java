@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.android.volley.RequestQueue;
@@ -34,6 +35,17 @@ public class Register extends Activity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_register);
+
+        final ImageButton back11 = (ImageButton)findViewById(R.id.back11);
+
+        back11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent registerIntent = new Intent(Register.this, Login.class);
+                Register.this.startActivity(registerIntent);
+            }
+        });
+
 
         cPro = (Button) findViewById(R.id.choosePro);
         mItemSelected = (TextView) findViewById(R.id.tvItemSelected);

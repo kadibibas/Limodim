@@ -40,11 +40,16 @@
         <activity android:name=".kesher" />
         <activity android:name=".about" />
         <activity android:name=".opinion" />
-        <activity android:name=".Refer" />
         <activity android:name=".Search" />
         <activity android:name=".Schedule" />
         <activity android:name=".Result" />
         <activity android:name=".Main_User" />
+        <activity android:name=".User1" />
+        <activity android:name=".User1_1" />
+        <activity android:name=".User1_2" />
+        <activity android:name=".User_search_1" />
+        <activity android:name=".User_search_2" />
+        <activity android:name=".Confrime"></activity>
     </application>
 
 </manifest>

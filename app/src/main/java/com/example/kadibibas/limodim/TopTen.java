@@ -9,7 +9,7 @@ import android.widget.ImageButton;
 
 public class TopTen extends AppCompatActivity {
 
-    ImageButton kadi;
+    ImageButton kadi,itai,noam;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +22,23 @@ public class TopTen extends AppCompatActivity {
             public void onClick(View v) {
                 Intent kadi1Intent = new Intent(TopTen.this, Main_User.class);
                 TopTen.this.startActivity(kadi1Intent);
+            }
+        });
+
+        itai = (ImageButton)findViewById(R.id.icon2);
+        itai.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent itai1Intent = new Intent(TopTen.this, User1_1.class);
+                TopTen.this.startActivity(itai1Intent);
+            }
+        });
+        noam = (ImageButton)findViewById(R.id.icon1);
+        noam.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent noam1Intent = new Intent(TopTen.this, User1_2.class);
+                TopTen.this.startActivity(noam1Intent);
             }
         });
 

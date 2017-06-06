@@ -177,7 +177,7 @@ public class MainActivity extends AppCompatActivity
                     MainActivity.this.startActivity(registerIntent);
 
         } else if (id == R.id.nav_profile) {
-            Intent registerIntent = new Intent(MainActivity.this, Main_User.class);
+            Intent registerIntent = new Intent(MainActivity.this, User1.class);
             MainActivity.this.startActivity(registerIntent);
 
         } else if (id == R.id.nav_about) {
