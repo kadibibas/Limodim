@@ -36,14 +36,7 @@ public class User_search_2 extends AppCompatActivity {
             }
         });
 
-        final Button op = (Button)findViewById(R.id.bt15);
-        op.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent opIntent = new Intent(User_search_2.this, opinion.class);
-                User_search_2.this.startActivity(opIntent);
-            }
-        });
+
 
 
         final Button bt14 = (Button) findViewById(R.id.bt14);
