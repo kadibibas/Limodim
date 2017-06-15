@@ -49,7 +49,9 @@
         <activity android:name=".User1_2" />
         <activity android:name=".User_search_1" />
         <activity android:name=".User_search_2" />
-        <activity android:name=".Confrime"></activity>
+        <activity android:name=".Confrime" />
+        <activity android:name=".Sertificate" />
+        <activity android:name=".Search_Proses"></activity>
     </application>
 
 </manifest>

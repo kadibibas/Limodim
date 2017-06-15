@@ -28,6 +28,13 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:src="@drawable/logo2"/>
+        <ImageButton
+            android:id="@+id/back20"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/arrofi"
+            android:background="@color/colorPrimary"
+            />
 
 
     </android.support.v7.widget.Toolbar>
@@ -51,7 +58,7 @@
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=" נועם גורן"
+        android:text="קדי ביבס"
         android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
@@ -84,7 +91,7 @@
         app:layout_constraintRight_toRightOf="parent"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintTop_creator="1"
-        android:layout_marginRight="45dp"
+        android:layout_marginRight="16dp"
         android:layout_marginTop="10dp"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
@@ -101,7 +108,7 @@
         android:layout_marginEnd="1dp"
         app:layout_constraintRight_toRightOf="@+id/textView25"
         android:layout_marginTop="21dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="21dp"
         app:layout_constraintTop_toTopOf="@+id/textView25" />
 
     <TextView
@@ -122,7 +129,7 @@
         android:layout_height="0dp"
         android:layout_marginBottom="22dp"
         android:layout_marginTop="21dp"
-        android:text="נועם העביר שיעור אנגילת לבני אשר בכיתה ה. השיעור היה מוצלח מאוד, נועם היה מקצועי ונחמד מאוד לבני. ממליץ בחום"
+        android:text="קדי העביר שיעור אנגילת לבני אשר בכיתה ה. השיעור היה מוצלח מאוד, נועם היה מקצועי ונחמד מאוד לבני. ממליץ בחום"
         android:textAlignment="center"
         android:textColor="@color/darkorange"
         android:textSize="18sp"
@@ -144,32 +151,34 @@
         android:textSize="18sp"
         tools:layout_constraintBottom_creator="1"
         tools:layout_constraintRight_creator="1"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="@+id/textView34"
-        android:layout_marginBottom="307dp"
-        android:layout_marginRight="0dp"
-        tools:layout_editor_absoluteX="213dp" />
+        android:layout_marginRight="2dp"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/textView38"
+        android:layout_marginEnd="2dp"
+        android:layout_marginTop="137dp"
+        android:layout_marginBottom="139dp"
+        app:layout_constraintTop_toTopOf="@+id/textView21" />
 
     <TextView
         android:id="@+id/textView34"
-        android:layout_width="172dp"
+        android:layout_width="0dp"
         android:layout_height="38dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginStart="30dp"
         android:text=" תאריך 21.4.17"
         android:textSize="18sp"
         tools:layout_constraintBottom_creator="1"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintTop_creator="1"
-        app:layout_constraintBottom_toBottomOf="@+id/textView36"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="21dp"
-        android:layout_marginBottom="21dp"
         app:layout_constraintLeft_toLeftOf="@+id/textView36"
-        app:layout_constraintTop_toTopOf="@+id/textView33"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="163dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView17"
+        android:layout_marginBottom="162dp" />
 
     <TextView
         android:id="@+id/textView36"
@@ -180,8 +189,9 @@
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintTop_creator="1"
         app:layout_constraintRight_toRightOf="@+id/textView38"
-        android:layout_marginTop="34dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView33" />
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/textView34"
+        app:layout_constraintTop_toBottomOf="@+id/textView34" />
 
     <TextView
         android:id="@+id/textView38"
@@ -189,19 +199,22 @@
         android:layout_height="80dp"
         android:layout_marginEnd="1dp"
         android:layout_marginStart="1dp"
-        android:text="נועם העביר שיעור חשבון לביתי בת ה-8, השיעור היה מוצלח מאוד"
+        android:text="קדי העביר שיעור חשבון לביתי בת ה-8, השיעור היה מוצלח מאוד"
         android:textAlignment="center"
         android:textColor="@color/darkorange"
         android:textSize="18sp"
         android:textStyle="italic"
         app:layout_constraintLeft_toLeftOf="@+id/textView14"
         app:layout_constraintRight_toRightOf="@+id/textView25"
-        app:layout_constraintTop_toBottomOf="@+id/textView36"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintTop_creator="1"
-        android:layout_marginTop="0dp"
-        app:layout_constraintHorizontal_bias="0.666" />
+        app:layout_constraintHorizontal_bias="0.0"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/textView16"
+        android:layout_marginTop="52dp"
+        android:layout_marginBottom="53dp"
+        app:layout_constraintTop_toTopOf="@+id/textView34" />
 
     <ImageButton
         android:id="@+id/imageButton5"

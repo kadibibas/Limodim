@@ -28,6 +28,16 @@ import android.widget.ImageView;
                 ImageView Profilimage = (ImageView) findViewById(R.id.imageView44);
                 Profilimage.setImageResource(R.drawable.kadi);
 
+                final Button bt3 = (Button)findViewById(R.id.bt3);
+                bt3.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent registerIntent = new Intent(Main_User.this, opinion.class);
+                        Main_User.this.startActivity(registerIntent);
+                    }
+                });
+
+
                 ImageView mail = (ImageView) findViewById(R.id.imageView55);
                 mail.setImageResource(R.drawable.ic_email_black_24dp);
 

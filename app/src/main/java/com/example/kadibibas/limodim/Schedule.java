@@ -56,6 +56,16 @@ public class Schedule extends AppCompatActivity {
             }
         });
 
+        final Button ok = (Button)findViewById(R.id.button5);
+
+        ok.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent registerIntent = new Intent(Schedule.this, Sertificate.class);
+                Schedule.this.startActivity(registerIntent);
+            }
+        });
+
     }
 
     private void UpdateDate()
