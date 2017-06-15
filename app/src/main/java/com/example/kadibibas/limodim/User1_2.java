@@ -26,6 +26,8 @@ public class User1_2 extends AppCompatActivity {
             }
         });
 
+
+
         final Button bt8 = (Button) findViewById(R.id.bt8);
         bt8.setText(Html.fromHtml("<a href=\"mailto:noamgoren@gmail.com\">פניה למורה</a>"));
         bt8.setMovementMethod(LinkMovementMethod.getInstance());
