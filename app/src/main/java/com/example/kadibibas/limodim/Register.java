@@ -29,6 +29,13 @@ public class Register extends Activity {
     boolean[] checkedItems;
     ArrayList<Integer> mUserItems= new ArrayList<>();
 
+    //class
+    Button ssClass;
+    TextView mItemSelected2;
+    String[] listItems2;
+    boolean[] checkedItems2;
+    ArrayList<Integer> mUserItems2 = new ArrayList<>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +58,12 @@ public class Register extends Activity {
         mItemSelected = (TextView) findViewById(R.id.tvItemSelected);
         listItems= getResources().getStringArray(R.array.ProItem);
         checkedItems= new boolean[listItems.length];
+
+        //class
+        ssClass = (Button) findViewById(R.id.ssClass);
+        mItemSelected2 = (TextView) findViewById(R.id.ssclassSelected);
+        listItems2 = getResources().getStringArray(R.array.CItem);
+        checkedItems2 = new boolean[listItems2.length];
 
         cPro.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -98,6 +111,65 @@ public class Register extends Activity {
                             checkedItems[i]= false;
                             mUserItems.clear();
                             mItemSelected.setText("לא נבחרו מקצועות");
+                        }
+                    }
+                });
+                AlertDialog mDialog = mBuilder.create();
+                mDialog.show();
+
+            }
+        });
+
+        //class
+        ssClass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertDialog.Builder mBuilder = new AlertDialog.Builder(Register.this);
+                mBuilder.setTitle("סמן את כיתות הלימוד אשר ברצונך ללמד");
+                mBuilder.setMultiChoiceItems(listItems2, checkedItems2, new DialogInterface.OnMultiChoiceClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int position, boolean isChecked) {
+                        if (isChecked) {
+                            if (!mUserItems2.contains(position)) {
+                                mUserItems2.add(position);
+                            }
+                        } else if (mUserItems2.contains(position)) {
+                            mUserItems2.remove(position);
+                        }
+
+                    }
+                });
+                mBuilder.setCancelable(false);
+
+
+                mBuilder.setPositiveButton("אשר", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int which) {
+                        String item = "";
+                        for (int i = 0; i < mUserItems2.size(); i++) {
+                            item = item + listItems2[mUserItems2.get(i)];
+                            if (i != mUserItems2.size() - 1) {
+                                item = item + ", ";
+                            }
+                        }
+                        mItemSelected2.setText(item);
+                    }
+                });
+
+                mBuilder.setNegativeButton("בטל", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.dismiss();
+                    }
+                });
+
+                mBuilder.setNeutralButton("נקה הכל", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int which) {
+                        for (int i = 0; i < checkedItems2.length; i++) {
+                            checkedItems2[i] = false;
+                            mUserItems2.clear();
+                            mItemSelected2.setText("לא נבחרו כיתות");
                         }
                     }
                 });
